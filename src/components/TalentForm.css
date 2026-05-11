@@ -1,0 +1,103 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+  background: url("/src/assets/bgweb.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Center container */
+.form-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card (main widget) */
+.form-card {
+  background: rgba(255, 255, 255, 0.651);
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.form-card h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Subtitle */
+.form-card p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form fields */
+.form-field {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Inputs & select */
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+/* Focus effect */
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Button hover */
+.submit-btn:hover {
+  background-color: #357abd;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .form-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
